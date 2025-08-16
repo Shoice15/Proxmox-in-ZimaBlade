@@ -118,7 +118,7 @@ Install docker, replace `johnsmith` with your own
 ```sh
 sudo apt update && sudo apt upgrade
 curl -sSL https://get.docker.com | sh
-sudo usermod -aG docker johnsmith
+sudo usermod -aG docker shoice
 ```
 
 ### File sharing
@@ -135,7 +135,7 @@ cd /mnt/media && mkdir nas guests
 
 Create your Samba user
 ```sh
-sudo smbpasswd -a johnsmith
+sudo smbpasswd -a shoice
 ```
 
 Edit Config
@@ -151,7 +151,7 @@ Set the `/etc/samba/smb.conf` like this:
    server string = Debian Samba Server
    security = user
    map to guest = Bad Password
-   guest account = johnsmith
+   guest account = shoice
    
    # macOS compatibility
    server min protocol = SMB2
@@ -175,13 +175,13 @@ Set the `/etc/samba/smb.conf` like this:
    read only = no
    create mask = 0666
    directory mask = 0777
-   force user = johnsmith
+   force user = shoice
 
 [MyNAS]
    path = /mnt/media/nas
    writable = yes
    browsable = yes
-   valid users = johnsmith
+   valid users = shoice
    guest ok = no
    read only = no
    create mask = 0666
