@@ -94,12 +94,12 @@ apt install sudo curl
 
 Add the main user, replace `johnsmith` with your own
 ```sh
-adduser johnsmith
+adduser shoice
 ```
 
 Adding the user to sudoers
 ```sh
-usermod -aG sudo johnsmith
+usermod -aG sudo shoice
 ```
 
 Get your ip address
