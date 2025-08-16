@@ -1,4 +1,4 @@
-https://www.youtube.com/watch?v=ESVYBcdKZY4&t=4052s
+*https://www.youtube.com/watch?v=ESVYBcdKZY4&t=4052s
 *Comando para zfs si los discos no son del mismo tamaño
 ```sh
 zpool create -o ashift=12 -f mzp mirror /dev/sda /dev/sdb
