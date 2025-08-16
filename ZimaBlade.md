@@ -1,3 +1,4 @@
+https://www.youtube.com/watch?v=ESVYBcdKZY4&t=4052s
 # Proxmox in ZimaBlade
 
 ### Setup
